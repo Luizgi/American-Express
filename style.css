@@ -1,0 +1,158 @@
+main{
+  background-color:white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.welcome{
+  text-align: center;
+  margin: auto;
+}
+
+.newone{ 
+  text-align: center;
+  margin: auto;
+  
+
+}
+img, p {
+    display: inline-block;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .sidebyside{
+      display: flex;
+      flex-direction: row;
+  }
+
+
+.btnstart{
+   padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+ 
+.enter{
+  font-family: Comic sans-serif;
+  font-size: 90px;
+  text-align: center;
+}
+
+.btnmid{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(204, 206, 76);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.desc{
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+#map { 
+  height: 180px; 
+}
+
+.ondadogin{
+  float: left;
+}
+
+.btnfinal {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #dacdcd;
+    text-align: center;
+    cursor: pointer;
+    width: 8%;
+    font-size: 18px;
+  }
+
+.last{
+ font-size: 18px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+
+@media only(max-width:375px) {   
+ .main{ 
+   text-align: center;
+   font-size:8px; 
+ }
+  .img, p{display:inline-block;}
+  .btnMid{width: 10%;}
+  .btnStart{width:10%;}
+  .menu{font-size: 5px;}
+  .b1{display: block;
+  min-width: 10em;  }
+  .b2{display: block;
+  min-width: 10em;}
+  .b3{display: block;
+  min-width: 10em;}
+  .b4{display: block;
+  min-width: 10em;}
+  .b5{display: block;
+  min-width: 10em;}
+}
+
+
+@media only screen and (min-width: 600px) {
+  .col1 {width: 50%;}
+  .col2 {width: 50%;}
+  .col3 {width: 50%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col1 {width: 50%;}
+  .col2 {width: 50%;}
+  .col3 {width: 50%;}
+}

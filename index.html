@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale=1.0>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <title>American Express</title>
+</head>
+
+<body>
+  <main><div class="menu">
+  <div>
+    <img class="ondadogin" src="American.png" alt="airplane with american express" width="130">
+    <div id="ae"class="enter">
+      American Express
+    </div>
+  </div>
+  <a href="#VP" class="btnstart" class="b1" >Viagens Promocionais</a>
+    
+  <a href="#VN" class="btnstart" class="b2">Viagens Nacionais</a>
+  <a href="#mapa" class="btnstart" class="b3">Mapa</a>
+    <a href="#ae" class="btnstart" class="b4">Home</a>
+    <a href="#cm" class="btnstart" class="b5">Conversor de Milhas</a>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <h1>Planos: </h1>
+  <div class="sidebyside">
+    
+    <div class="col1">
+      <div  class="card">
+      <img src="bronze.png" alt="basic plan" width="100">
+      <h1>Plano Basico</h1>
+      <p class="title">Planos de Viagens Nacionais</p>
+      <br>
+      Valor USD = 50
+    </div>
+      </div>
+
+    
+        <div class="col2">
+    <div class="card">
+      <img src="prata.png" alt="medium plan" width="100">
+      <h1>Plano Medio</h1>
+      <p class="title">Planos de Viagens Nacionais e Internacionais</p>
+      Valor USD = 75
+    </div>
+        </div>
+
+        <div class="col3">
+    <div class="card">
+      <img src="ouro.png" alt="high plan" width="100">
+      <h1>Plano Alto</h1>
+      <p class="title">Planos de Viagens Nacionais e Internacionais, brindes promocionais e creditos em milhas</p>
+      Valor USD = 100
+      </div>
+        </div>
+    </div>
+  </div>
+    
+  <h1 id="VP">Viagens Promocionais:</h1>
+
+
+  <div class="sidebyside">
+    <div class="card" style="width:20%">
+      <img src="RJ.jpg" alt="Rio de Janeiro" style="width:100%">
+      <p class="desc">Rio de Janeiro</p><br>
+      <button class="btnmid" onclick = "rio()"> Mostrar no Mapa</button>
+    </div>
+
+
+    <div class="card" style="width:20%">
+      <img src="Orlando.jpg" alt="Cidade de Orlando" style="width:100%">
+      <p class="desc">Orlando</p><br>
+      <button class="btnmid" onclick = "orlando()">Mostrar no Mapa</button>
+    </div>
+
+
+    <div class="card" style="width:20%">
+      <img src="Tokyo.jpg" alt="Tokyo" style="width:100%">
+      <p class="desc">Tokyo</p><br>
+      <button class="btnmid" onclick = tokyo()>Mostrar no Mapa</button>
+    </div>
+
+
+  </div><br>
+  <div class="sidebyside">
+    <div class="card" style="width:20%">
+      <img src="Paris.jpg" alt="Paris" style="width:100%">
+      <p class="desc">Paris</p><br>
+      <button class="btnmid" onclick = "paris() ">Mostrar no Mapa</button>
+    </div>
+
+
+    <div class="card" style="width:20%">
+      <img src="It%C3%A1lia.jpg" alt="Italia" style="width:100%">
+      <p class="desc" >Italia</p><br>
+      <button class="btnmid" onclick = "italia()">Mostrar no Mapa</button>
+    </div>
+
+
+  </div>
+  <h1 id="VN">Viagens Nacionais:</h1>
+
+  <div class="sidebyside">
+    <div class="card" style="width:20%">
+      <img src="MG.jpg" alt="Minas Gerais" style="width:100%">
+      <p class="desc" >Minas Gerais</p><br>
+      <button class="btnmid" onclick = "mg()">Mostrar no Mapa</button>
+    </div>
+
+
+    <div class="card" style="width:20%">
+      <img src="SP.jfif" alt="Sao Paulo" style="width:100%">
+      <p class="desc" onclick = "sp()">Sao Paulo</p><br>
+      <button class="btnmid">Mostrar no Mapa</button>
+    </div>
+
+
+    <div class="card" style="width:20%">
+      <img src="Brasilia.jpg" alt="Brasilia" style="width:100%">
+      <p class="desc" >Brasilia</p><br>
+      <button class="btnmid" onclick = "brasilia()">Mostrar no Mapa</button>
+    </div>
+
+  </div><br>
+  <div class="card" style="width:20%">
+    <img src="ES.jpg" alt="Espirito Santo" style="width:100%">
+    <p class="desc" >Espirito Santo</p><br>
+    <button class="btnmid" onclick ="es()">Mostrar no Mapa</button>
+  </div>
+<br>
+    <h1 id="mapa">Mapa:</h1>
+   <div id="map"></div>
+  
+  <h3 id="geo"></h3>
+<button type="submit" onClick="refreshPage()" class="btn">RESET</button>
+    </main>
+<h1 id="cm">Converta suas milhas aqui:</h1>
+  <input type="number" name="min" value="suas milhas aqui" id="quantia">
+  <button class="btnfinal" onclick="converter()"> <img src="convert.png" alt="botão converter" width="20px"   ></button> 
+  <br>
+  
+  <div class="last"><p>Quantidade de Milhas em reais é:<span id="res">?</span></p>
+    </div>
+  
+  <script src= "script.js"></script>
+ 
+</body>
+</html>
