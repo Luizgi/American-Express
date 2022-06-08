@@ -61,7 +61,7 @@ img, p {
 
 
 .btnstart{
-   padding: 8px;
+   height: 30px;
     color: white;
     background-color: #000;
     text-align: center;
@@ -123,36 +123,4 @@ img, p {
 }
 
 
-@media only(max-width:375px) {   
- .main{ 
-   text-align: center;
-   font-size:8px; 
- }
-  .img, p{display:inline-block;}
-  .btnMid{width: 10%;}
-  .btnStart{width:10%;}
-  .menu{font-size: 5px;}
-  .b1{display: block;
-  min-width: 10em;  }
-  .b2{display: block;
-  min-width: 10em;}
-  .b3{display: block;
-  min-width: 10em;}
-  .b4{display: block;
-  min-width: 10em;}
-  .b5{display: block;
-  min-width: 10em;}
-}
 
-
-@media only screen and (min-width: 600px) {
-  .col1 {width: 50%;}
-  .col2 {width: 50%;}
-  .col3 {width: 50%;}
-}
-
-@media only screen and (min-width: 768px) {
-  .col1 {width: 50%;}
-  .col2 {width: 50%;}
-  .col3 {width: 50%;}
-}
